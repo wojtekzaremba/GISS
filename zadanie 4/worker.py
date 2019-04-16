@@ -27,5 +27,3 @@ while True:
         print(current_document,"\n")
     else:
         break
-
-print("Zrobilem to prawie")
