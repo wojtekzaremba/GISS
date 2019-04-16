@@ -19,11 +19,7 @@ while True:
     if current_document is not None:
         value = current_document['val']
         value = calc(value)
-        print(value,"\n")
-
-
-        print (type(current_document['_id']),"\n")
         current_document = db.tasks.update_one({'_id' : current_document['_id']},{ '$set': { 'res' : value } })
-        print(current_document,"\n")
+
     else:
         break
